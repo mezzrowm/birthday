@@ -140,6 +140,13 @@ h3 { color: #ff5e78; }
 @keyframes glitch { 0%{transform:translate(0);}20%{transform:translate(-2px,2px);}40%{transform:translate(2px,-2px);}60%{transform:translate(-2px,-2px);}80%{transform:translate(2px,2px);}100%{transform:translate(0);} }
 @keyframes pop { from { transform: scale(0.7); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 @keyframes drop { from { transform: translateY(-40px); } to { transform: translateY(0); } }
+
+
+@media (max-height: 700px) {
+  .carousel-container { height: 75px; }
+  .face { width: 75px; height: 75px; }
+  h1 { font-size: 1.3em; }
+}
 </style>
 </head>
 
@@ -263,6 +270,7 @@ track.addEventListener('touchend', e => {
 
 </body>
 </html>
+
 
 
 
